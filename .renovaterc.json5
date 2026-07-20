@@ -9,7 +9,8 @@
   dependencyDashboard: true,
   dependencyDashboardTitle: "Renovate Dashboard 🤖",
   suppressNotifications: ["prEditedNotification", "prIgnoreNotification"],
-  enabledManagers: ["github-actions", "custom.regex"],
+  enabledManagers: ["github-actions", "custom.regex", "dockerfile"],
+  pinDigests: true,
   customManagers: [
     {
       description: "Track TimescaleDB version via timescaledb-ha Docker image tags",

@@ -27,7 +27,7 @@ spec:
     extensions:
       - name: timescaledb
         image:
-          reference: ghcr.io/adampetrovic/timescaledb-cnpg:2.26.1-18-trixie
+          reference: ghcr.io/eznix86/timescaledb-cnpg:2.28.1-18-trixie
     shared_preload_libraries:
       - timescaledb
     parameters:
@@ -45,7 +45,7 @@ spec:
     name: my-cluster
   extensions:
     - name: timescaledb
-      version: "2.26.1"
+      version: "2.28.1"
 ```
 
 ## How it works
@@ -64,10 +64,10 @@ Follows the pattern from [postgres-extensions-containers](https://github.com/clo
 ## Image tags
 
 ```
-ghcr.io/adampetrovic/timescaledb-cnpg:<tsdb_version>-<pg_major>-<debian_codename>
+ghcr.io/eznix86/timescaledb-cnpg:<tsdb_version>-<pg_major>-<debian_codename>
 ```
 
-Example: `ghcr.io/adampetrovic/timescaledb-cnpg:2.26.1-18-trixie`
+Example: `ghcr.io/eznix86/timescaledb-cnpg:2.28.1-18-trixie`
 
 ## Automated updates
 
