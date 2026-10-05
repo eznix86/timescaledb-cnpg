@@ -8,7 +8,7 @@
 # This includes the TSL module needed for compression,
 # continuous aggregates, and other licensed features.
 
-ARG BASE=ghcr.io/cloudnative-pg/postgresql:18-minimal-trixie@sha256:538f1b327b8dc7621a94aac79c9c3e5c50dfa29115a6c291e19372a5b876f415
+ARG BASE=ghcr.io/cloudnative-pg/postgresql:18-minimal-trixie@sha256:37ade18dbdddba430858c72725aceeec66f33fa5333e82ea1df4942f6c1c83a3
 FROM $BASE AS builder
 
 ARG PG_MAJOR=18
